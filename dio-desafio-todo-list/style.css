@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+body{
+    background-color: #d0e7fc;
+}
+
+h1{
+    font-family: "Montserrat";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 400px;
+    padding: 10px;
+}
+
+#items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    flex-direction: column;
+}
+
+#items input[type=text]{
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #e3e9f0;
+}
+
+#items button{
+    width: 100px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(156, 18, 133);
+    color: white;
+    cursor: pointer;
+}
+
+.container2{
+    display: flex;
+    border: 1px solid black;
+}
+
+
+#items2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    gap: .3rem;
+}
+
+/* #items2 input[type=checkbox], label{
+    padding: 0;
+    width: 250px;
+} */
+
+:checked + label{
+    text-decoration: line-through;
+    color: grey;
+}
